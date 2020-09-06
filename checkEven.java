@@ -1,5 +1,6 @@
 public class checkEven{
 	public static void main(String[] args){
-		System.out.println(helper.isEven("25"));
+		int test_var = 25;
+		System.out.println("Results for " + test_var + "is: " + helper.isEven(25));
 	}
 }
