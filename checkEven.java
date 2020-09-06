@@ -3,10 +3,10 @@ public class checkEven{
 		int test_var = 25;
 
 		if(test_var%2 == 0 && helper.isEven(test_var)){
-			System.out.println("Test has passed");
+			System.out.println("true");
 		}
 		else{
-			System.out.println("Test has failed");
+			System.out.println("false");
 		}
 	}
 }
