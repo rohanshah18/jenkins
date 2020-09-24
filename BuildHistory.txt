@@ -3,3 +3,5 @@
  For build#: 38 and test input=15, test has failed!
 
  For build#: 39 and test input=15, test has failed!
+
+ For build#: 40 and test input=15, test has passed!
