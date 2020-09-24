@@ -6,7 +6,8 @@ public class checkEven{
 
 		int test_var = 27;
 		String fileName = "BuildHistory.txt";
-
+		System.out.println(helper.isEven(test_var));
+/*
 		//Instantiating the Scanner class to read the file
 		Scanner sc = new Scanner(new File(fileName));
 		StringBuffer buffer = new StringBuffer();
@@ -30,6 +31,6 @@ public class checkEven{
 		FileWriter writer = new FileWriter(fileName);
 		writer.append(buffer);
 		writer.flush();
-
+*/
 	}
 }
