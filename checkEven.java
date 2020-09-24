@@ -28,7 +28,6 @@ public class checkEven{
 
 		//Writing to the buildhistory file
 		FileWriter writer = new FileWriter(fileName);
-		System.out.println("new data: " + buffer);
 		writer.append(buffer);
 		writer.flush();
 
