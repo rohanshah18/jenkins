@@ -1,7 +1,3 @@
-For build#: 31 and test input=6, test has failed!
-For build#: 32 and test input=7, test has failed!
-For build#: 33 and test input=7, test has failed!For build#: 36 and test input=15, test has failed!
--e 
  For build#: 37 and test input=15, test has failed!
 
  For build#: 38 and test input=15, test has failed!
