@@ -1,1 +1,2 @@
-For build#: 31, test has failed!
+16or build#: 31, test has failed!
+Build 16 has failed for integer value: 27For build#: 32, test has failed!
