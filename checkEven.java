@@ -4,11 +4,18 @@ import java.util.Scanner;
 public class checkEven{
 	public static void main(String[] args) throws IOException {
 
-		int test_var = 27;
-		String fileName = "BuildHistory.txt";
-		System.out.println(helper.isEven(test_var));
+		int test_var = Integer.valueOf(args[0]);
+		boolean results = helper.isEven(test_var);
+		if((results==true && test_var%2==0) || (results==false && test_var%2!=0)){
+			System.out.println("true");
+		}
+		else{
+			System.out.println("false");
+		}
+
 /*
 		//Instantiating the Scanner class to read the file
+		String fileName = "BuildHistory.txt";
 		Scanner sc = new Scanner(new File(fileName));
 		StringBuffer buffer = new StringBuffer();
 
