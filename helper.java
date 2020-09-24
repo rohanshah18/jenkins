@@ -1,5 +1,5 @@
 public class helper{
 	public static boolean isEven(int num){
-		return (num%3==0);
+		return (num%2==0);
 	}
 }
