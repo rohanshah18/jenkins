@@ -14,9 +14,13 @@ public class helper{
 		return s;
 	}
 
+	private static int sum2(int a, int b){
+		return a+b;
+	}
+
 	public static void main(String[] args) {
-		int test_var = Integer.valueOf(args[0]);
-		System.out.println(isEven(test_var));
+		System.out.println(isEven(Integer.valueOf(args[0])));
 		System.out.println(reverseString(args[1]));
+		System.out.println(sum2(Integer.valueOf(args[2]), (Integer.valueOf(args[3]))));
 	}
 }
