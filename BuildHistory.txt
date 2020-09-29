@@ -28,3 +28,7 @@ For build#: 48 and test input=15, test 1 has passed!
 For build#: 48 and test input=Apple, test 2 has passed!
 For build#: 48 and test input=2147483647 and 1, test 3 has failed! Did you check for maximum integer value int can handle?
 
+For build#: 50 and test input=15, test 1 has passed!
+For build#: 50 and test input=Apple, test 2 has passed!
+For build#: 50 and test input=2147483647 and 1, test 3 has failed! Did you check for maximum integer value int can handle?
+
