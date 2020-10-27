@@ -1,0 +1,45 @@
+javac helper.java
+
+testNum=15
+testString='Apple'
+SumNum1=2147483647
+SumNum2=1
+output=$(java helper $testNum $testString $SumNum1 $SumNum2)
+
+arr=()
+
+while read -r line; do
+   arr+=("$line")
+done <<< "$output"
+git checkout master
+git pull
+
+rem=$(( $testNum % 2 )) 
+
+if ([ ${arr[0]} == "true" ] && [ $rem == 0 ]) || ([ ${arr[0]} == "false" ] && [ $rem == 1 ])
+then
+   echo "For build#: $BUILD_NUMBER and test input=$testNum, test 1 has passed!" >> BuildHistory.txt
+
+else
+   echo "For build#: $BUILD_NUMBER and test input=$testNum, test 1 has failed!" >> BuildHistory.txt
+fi
+
+if [ ${arr[1]} == "elppA" ]
+then
+   echo "For build#: $BUILD_NUMBER and test input=$testString, test 2 has passed!" >> BuildHistory.txt
+
+else
+   echo "For build#: $BUILD_NUMBER and test input=$testString, test 2 has failed!" >> BuildHistory.txt
+fi
+
+if [ ${arr[2]} -gt -1 ]
+then
+   echo "For build#: $BUILD_NUMBER and test input=$SumNum1 and $SumNum2 test 3 has passed!\n" >> BuildHistory.txt
+
+else
+   echo "For build#: $BUILD_NUMBER and test input=$SumNum1 and $SumNum2, test 3 has failed! Did you check for maximum integer value Java int can handle?\n" >> BuildHistory.txt
+fi
+
+git add BuildHistory.txt
+git commit -m "logged build number with results"
+git push
