@@ -16,14 +16,10 @@ public class ErrorResponses {
     }
 
     private static ArrayList<String> getErrorResponse(String error) {
-        if (error != null && error.length() > 0 && error.charAt(error.length() - 1) == ':') {
-            error = error.substring(0, error.length() - 1).toLowerCase();
-            for (String firstWord : error.split("\\.")) {
-                if (firstWord.equals("java")) {
-                    if (errorResponseMap.containsKey(error)) {
-                        return errorResponseMap.get(error);
-                    }
-                }
+        if (error != null && error.length() > 0) {
+            error = error.toLowerCase();
+            if (errorResponseMap.containsKey(error)) {
+                return errorResponseMap.get(error);
             }
         }
         return new ArrayList<String>();
@@ -34,8 +30,8 @@ public class ErrorResponses {
         addErrorResponse("java.lang.ArrayIndexOutOfBoundsException", "Did you try to access an array's ith element whose value is not defined yet?");
         addErrorResponse("java.lang.NullPointerException", "Did you try to use a variable that was not initialized before?");
         ArrayList<String> hints = getErrorResponse(args[0]);
-        for (int i=1; i<=hints.size(); i++) {
-            System.out.println(i + ". " + hints.get(i-1));
+        for (int i = 1; i <= hints.size(); i++) {
+            System.out.println(i + ". " + hints.get(i - 1));
         }
     }
 }
