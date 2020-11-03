@@ -19,7 +19,7 @@ public class helper {
     }
 
     private static void failFunc(int[] a) {
-        System.out.println(a[1]);
+        System.out.println(a[0]);
     }
 
     public static void main(String[] args) throws Exception {

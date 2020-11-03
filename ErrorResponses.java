@@ -26,8 +26,8 @@ public class ErrorResponses {
     }
 
     public static void main(String[] args) {
-        addErrorResponse("java.lang.ArrayIndexOutOfBoundsException", "The array is indexed at 0 in java");
-        addErrorResponse("java.lang.ArrayIndexOutOfBoundsException", "Did you try to access an array's ith element whose value is not defined yet?");
+        addErrorResponse("java.lang.ArrayIndexOutOfBoundsException", "The array is indexed at 0 in java \n");
+        addErrorResponse("java.lang.ArrayIndexOutOfBoundsException", "Did you try to access an array's ith element whose value is not defined yet?\n");
         addErrorResponse("java.lang.NullPointerException", "Did you try to use a variable that was not initialized before?");
         ArrayList<String> hints = getErrorResponse(args[0]);
         for (int i = 1; i <= hints.size(); i++) {
