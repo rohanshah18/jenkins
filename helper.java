@@ -19,16 +19,16 @@ public class helper {
     }
 
     private static void failFunc(int[] a) {
-        System.out.println(a[0]);
+        int i = a[1];
     }
 
     public static void main(String[] args) throws Exception {
         try {
             int[] arr = {1};
-            failFunc(arr);
             System.out.println(isEven(Integer.valueOf(args[0])));
             System.out.println(reverseString(args[1]));
             System.out.println(sum2(Integer.valueOf(args[2]), (Integer.valueOf(args[3]))));
+            failFunc(arr);
         } catch (Exception e) {
             System.out.println(e.getClass().getName());
         }
