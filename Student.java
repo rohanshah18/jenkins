@@ -1,8 +1,10 @@
-public class helper {
+public class Student {
+    // checks if an int is even
     public static boolean isEven(int num) {
         return (num % 2 == 0);
     }
 
+    // Reverses a String
     public static char[] reverseString(String S) {
         char[] s = S.toCharArray();
         int left = 0, right = s.length - 1;
@@ -14,10 +16,12 @@ public class helper {
         return s;
     }
 
+    // Sum two int
     private static int sum2(int a, int b) {
         return a + b;
     }
 
+    // Function fails with error ArrayIndexOutOfBounds
     private static void failFunc(int[] a) {
         int i = a[1];
     }
@@ -34,3 +38,5 @@ public class helper {
         }
     }
 }
+
+

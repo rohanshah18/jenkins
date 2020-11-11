@@ -1,0 +1,3 @@
+java.lang.ArrayIndexOutOfBoundsException; The array is indexed at 0 in java
+java.lang.ArrayIndexOutOfBoundsException; Did you try to access an array's ith element whose value is not defined yet?
+java.lang.NullPointerException; Did you try to use a variable that was not initialized before?
